@@ -1,0 +1,25 @@
+{% extends "mainapp/main.html" %}
+{% block content %}
+
+<section id="home" class="full-height px-lg-5">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10">
+                <h1 class="display-4 fw-bold" data-aos="fade-up">I'M A <span class="text-brand">Django Developer</span> FROM KTM, NEPAL</h1>
+                <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">I am a Django Developer with positive can-do attitude. Besides that, I am comfortable working with the team and very desperate to learn new things.</p>
+                <div data-aos="fade-up" data-aos-delay="600">
+                    <a href="{% url 'works' %}" class="btn btn-brand me-3">Explore My Work </a>
+                    <a href="tel:+9866089233" class="link-custom">Call: 9866089233</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row gy-4 justify-content-between">
+            <div class="col-auto">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

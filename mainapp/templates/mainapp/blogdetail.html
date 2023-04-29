@@ -1,0 +1,21 @@
+{% extends "mainapp/main.html" %}
+{% block content %}
+<section id="home" class="full-height px-lg-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10">
+                <p> {{blogg.date}}</p>
+                <p> {{blogg.title}}</p>
+                <p> {{blogg.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row gy-4 justify-content-between">
+            <div class="col-auto">
+            </div>
+        </div>
+    </div>
+</section>          
+{% endblock content %}

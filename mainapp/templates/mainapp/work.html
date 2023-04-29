@@ -1,0 +1,36 @@
+{% extends "mainapp/main.html" %}
+{% block content %}
+<section id="work" class="full-height px-lg-5">
+    <div class="container">
+
+        <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+                <h6 class="text-brand">WORK</h6>
+                <h1>My Recent Projects</h1>
+            </div>
+        </div>
+         {% for work in works%}  
+        <div class="row gy-4">
+
+            <div class="col-md-6" data-aos="fade-up">
+                <div class="card-custom rounded-4 bg-base shadow-effect">
+                    <div class="card-custom-image rounded-4">
+                        <img class="rounded-4" src="./assets/images/project-1.jpg" alt="">
+                    </div>
+                    <div class="card-custom-content p-4">
+                        <h4>{{work.title}}</h4>
+                        <p> {{work.description}}</p>
+                        <p>{{work.demolink}}</p>
+                        <a href="{% url 'work' work.id %}" class="link-custom">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            {%endfor%}
+
+            
+        </div>
+
+    </div>
+</section>
+{% endblock content %}

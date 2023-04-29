@@ -1,0 +1,44 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container flex-lg-column">
+        <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+            <span class="h3 fw-bold d-block d-lg-none">Sujan Thapaliya</span>
+            <img src="{% static 'images/sujan.jpg' %}" class="d-none d-lg-block rounded-circle" alt="">
+        </a>
+        <div class="social-icons">
+            <a href="https://twitter.com/thapaliya5?s=09&fbclid=IwAR1hX6ip02FV4DqvAwr3Caoop6dv1B-Z98Fypc-OQEMD2BrFbgwDgPkA7z4"><i class="lab la-twitter"></i></a>
+            <a href="https://www.instagram.com/thapaliyasujan/"><i class="lab la-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sujan-thapaliya-044b681a3/"><i class="lab la-linkedin"></i></a>
+            <a href="https://github.com/Sujan-code"><i class="lab la-github"></i></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'services' %}">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'works' %}">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">About</a>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'blogs' %}">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<a href="https://github.com/Sujan-code"><i class="lab la-back"></i></a>

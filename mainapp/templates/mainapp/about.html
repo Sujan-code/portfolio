@@ -1,0 +1,52 @@
+{% extends "mainapp/main.html" %}
+{% block content %}
+<section id="about" class="full-height px-lg-5">
+    <div class="container">
+
+        <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+                <h6 class="text-brand">ABOUT</h6>
+                <h1>My Education & Experiance</h1>
+            </div>
+        </div>
+
+        <div class="row gy-5">
+            <div class="col-lg-6">
+
+                <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Education</h3>
+                <div class="row gy-4">
+                    {% for education in educations%} 
+                    <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                        <div class="bg-base p-4 rounded-4 shadow-effect">
+                            <h4>{{education.Faculty}}</h4>
+                            <p class="text-brand mb-2">{{education.collegename}}</p>
+                            <p class="mb-0">{{education.description}}</p>
+                        </div>
+                    </div>
+                 {%endfor%}
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Experiance</h3>
+                <div class="row gy-4">
+                    {% for experience in experiences%}
+                    <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                        <div class="bg-base p-4 rounded-4 shadow-effect">
+                            <h4>{{experience.jobtitle}}</h4>
+                            <p class="text-brand mb-2">{{experience.company}}</p>
+                            <p class="mb-0">{{experience.description}}</p>
+                        </div>
+                    </div>
+                 {%endfor%}
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+{% endblock content %}
